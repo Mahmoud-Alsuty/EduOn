@@ -1,0 +1,145 @@
+/*Global styles*/
+body {
+    font-size: 15pt;
+    margin:0;
+    padding:0;
+    font-family: 'Ubuntu', sans-serif;
+}
+/*upperbar*/
+.upperBar{
+  background-color:#08526d;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 3px;
+}
+.mail{
+  display:inline-block;
+}
+.right{
+  border:2px solid #ec1c23;
+  border-radius:10px;
+  padding:3px;
+  margin:5px;
+  float: right;
+}
+.left{
+  float: left;
+}
+/* navBar*/
+.navbar{
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  position: -o-sticky !important;
+  position: -moz-sticky !important;
+  top: 0;
+  width:100%;
+  z-index: 1000;
+}
+#first{
+ color: #08526d;
+ font-weight:500;
+ font-size: 35px;
+}
+#second{
+  color: #ec1c23;
+  font-weight:400;
+  font-size: 35px;
+}
+.navbar-nav .nav-link{
+  font-size: 20px;
+  text-transform:upperCase;
+  margin-left:5px;
+  color:#08526d !important;
+  text-align: center;
+}
+.navbar-nav .active > .nav-link{
+  color:#ec1c23 !important;
+  border-bottom: 2px solid #ec1c23;
+  transition:.3s ease-in-out;
+}
+.navbar-toggler:focus{
+  outline: none !important;
+  
+}
+.navbar-toggler:hover{
+  border: 2px solid #08526d !important;
+  transition: .3s ease-in-out;
+}
+
+/*slider*/
+.slider{
+  background-color:#ddd;
+}
+.carousel-inner{
+  display: flex;
+  align-items: center;
+}
+.carousel-inner h1{
+  position: absolute;
+  z-index: 3;
+  color: white;
+  font-size: 55px;
+  line-height: 1.5;
+  left:1em;
+}
+.carousel-inner span{
+  background-color: #ec1c23;
+  display: inline-block;
+  padding: 3px;
+}
+.overlay{
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1;
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+}
+.carousel-indicators li{
+  height: .7em !important;
+  width: .7em !important;
+  cursor: pointer;
+  border-radius: 50%;
+}
+/**/
+.row .col-lg-3{
+  text-align: center;
+  font-size: 20px;
+}
+.features i{
+  background-color:#ec1c23;
+  height: 120px;
+  width: 120px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 120px;
+}
+.features h3{
+  color: #08526d;
+  font-size: 22px;
+}
+.feature{
+  color: #08526d;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  font-size: 25px;
+}
+.features p{
+  color: #808080;
+  font-size: 23px;
+  margin-bottom: 40px;
+}
+/**/
+/**/
+/**/
+
+
+@media only screen and (max-width: 768px){
+  .carousel-inner h1{
+    font-size: 25px;
+  }
+}
